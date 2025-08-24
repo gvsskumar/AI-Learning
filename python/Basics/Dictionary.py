@@ -44,3 +44,8 @@ dict1.items()  # Output: dict_items([('name', 'Surya'), ('age', 20), ('city', 'H
 dict1.keys()  # Output: dict_keys(['name', 'age', 'city'])
 dict1.values()  # Output: dict_values(['Surya', 20, 'Hyderabad'])
 
+#Dictionary update
+dict1 = {'name': 'Surya', 'age': 20, 'city': 'Hyderabad'}
+dict2 = {'country': 'India', 'state': 'Telangana'}
+dict1.update(dict2)
+print(dict1)
