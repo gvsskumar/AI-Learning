@@ -1,0 +1,22 @@
+Week 1 – NumPy Basics --> Done
+ Install Jupyter Notebook / Google Colab
+ Create arrays: np.array(), np.zeros(), np.ones(), np.arange(), np.linspace()
+ Indexing & slicing (1D, 2D arrays)
+ Reshaping & reshaping pitfalls
+
+Week 2 – Math & Broadcasting --->Todo
+ Understand broadcasting rules
+ Element-wise vs. vectorized ops
+ Aggregations: .sum(), .mean(), .std(), .min(), .max()
+ Random: np.random.randint(), np.random.randn() 
+
+Week 3 – Linear Algebra
+ Matrix multiplication (np.dot, @)
+ Transpose, inverse (np.linalg.inv), determinant (np.linalg.det)
+ Eigenvalues, eigenvectors (np.linalg.eig)
+ Solve equations (np.linalg.solve) 
+
+Week 4 – Apply
+ Use NumPy + Matplotlib (plt.plot, plt.hist)
+ Implement gradient descent in NumPy
+ Build Linear Regression from scratch (no sklearn) 
