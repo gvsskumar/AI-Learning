@@ -1,0 +1,74 @@
+🔹 What is an Array?
+An array is a collection of elements stored in contiguous (continuous) memory locations.
+All elements are of the same type (e.g., integers, floats).
+Each element is accessed using an index (starting at 0 in Python/NumPy).
+
+Array = [10, 20, 30, 40, 50]
+
+Index:   0   1   2   3   4
+Value:  10  20  30  40  50
+
+🔹 Workflow of Arrays (Step by Step)
+1. Creation
+Allocate memory for a fixed size.
+Initialize elements.
+👉 Python (using list as array):
+arr = [10, 20, 30, 40, 50]
+
+👉 NumPy (better for AI/ML):
+import numpy as np
+arr = np.array([10, 20, 30, 40, 50])
+
+2. Access
+Retrieve elements using index.
+Time complexity → O(1) (constant time).
+
+print(arr[0])  # 10
+print(arr[3])  # 40
+
+3. Traversal
+Visit each element one by one.
+Useful for searching, printing, or applying operations.
+Time complexity → O(n).
+
+for num in arr:
+    print(num)
+
+4. Insertion
+Insert element at a specific index.
+Requires shifting elements → costly.
+Time complexity → O(n) in worst case.
+
+Example (insert 25 at index 2):
+Before: [10, 20, 30, 40]
+Insert: 25      ↑
+After : [10, 20, 25, 30, 40]    
+
+5. Deletion
+Remove element at an index.
+Requires shifting elements left.
+Time complexity → O(n).
+
+Example (delete element at index 1):
+Before: [10, 20, 30, 40]
+Delete: 20    ↑
+After : [10, 30, 40]
+
+6. Searching
+Linear Search → O(n)
+Binary Search (sorted arrays only) → O(log n)
+
+# Linear search
+x = 30
+found = False
+for i in range(len(arr)):
+    if arr[i] == x:
+        found = True
+        print("Found at index", i)
+        break
+
+
+🔹 Why Arrays Matter in AI/ML?
+Represent vectors, matrices, tensors (used in NumPy, Pandas, PyTorch, TensorFlow).
+Efficient numerical computation due to contiguous memory.
+Basis for images (pixels in arrays), word embeddings, feature vectors.

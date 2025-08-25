@@ -1,6 +1,6 @@
 🔹 1. Core Python Foundations
 
-Syntax & Control Flow → variables, loops, conditionals
+Syntax & Control Flow → variables, loops, conditionals  -->Done
 
 Functions & Modules → reusable code, imports
 
