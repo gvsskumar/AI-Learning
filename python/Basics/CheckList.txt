@@ -6,7 +6,7 @@ Functions & Modules → reusable code, imports -->Done
 
 OOP (Object-Oriented Programming) → classes, inheritance, polymorphism (important for AI frameworks) -->Done
 
-Error Handling → exceptions, debugging
+Error Handling → exceptions, debugging --Done
 
 File Handling → working with JSON, CSV, TXT
 
