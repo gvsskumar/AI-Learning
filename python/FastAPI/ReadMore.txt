@@ -1,0 +1,8 @@
+Step 1: pip install fastapi
+Step 2: pip install "uvicorn[standard]"
+Step 3: fastapienv\Scripts\activate.bat
+Step 4: uvicorn books:app --reload
+
+# FastAPI, where do we find already installed pip libraries
+"pip list"  --> Excuted this commond in terminal
+ 

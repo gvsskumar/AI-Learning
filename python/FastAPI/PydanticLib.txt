@@ -1,0 +1,63 @@
+🧩 What is Pydantic in Python?
+Pydantic is a data validation and settings management library in Python.
+It uses Python type hints to validate, parse, and serialize data automatically.
+
+Pydantic ensures your data is correct (type-safe and valid) — before your code uses it.
+
+💡 Why We Use It (Especially in FastAPI)
+FastAPI heavily depends on Pydantic to:
+Validate incoming request data (from JSON, form, etc.)
+Define data models (like schemas for request/response)
+Automatically generate documentation (via OpenAPI/Swagger)
+
+📘 Example: Using Pydantic in Python
+
+from pydantic import BaseModel
+
+class Book(BaseModel):
+    title: str
+    author: str
+    pages: int
+    price: float
+
+
+# Now you can create and validate data like this:
+
+book = Book(title="Python Mastery", author="John Doe", pages=350, price=499.99)
+print(book)
+
+#==================== Example 2 ==============#
+class Book(BaseModel):
+    id: int
+    author_id: str
+    title: str
+
+def __init__(self, id, author_id, title):
+        self.id = id
+        self.author_id = author_id
+        self.title = title
+Books = [
+    Book(id=1, author_id="1", title="Book 1"),
+    Book(id=2, author_id="2", title="Book 2"),
+    Book(id=3, author_id="3", title="Book 3") 
+]
+
+🧠 Summary
+Feature                 	Description
+Library name	            Pydantic
+Purpose	                    Data validation and parsing using Python type hints
+Used by	                    FastAPI, and other modern Python frameworks
+Key benefits	            Type safety, automatic validation, error handling, auto-doc generation
+Core class	                BaseModel
+
+# Old Version differences
+
+Pydantic v1 vs Pydantic v2
+FastAPI is now compatible with both Pydantic v1 and Pydantic v2.
+Based on how new the version of FastAPI you are using, there could be small method name changes.
+
+The three biggest are:
+1) .dict() function is now renamed to .model_dump()
+2) schema_extra function within a Config class is now renamed to json_schema_extra
+3) Optional variables need a =None example: id: Optional[int] = None
+
