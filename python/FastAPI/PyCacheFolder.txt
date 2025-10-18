@@ -1,0 +1,28 @@
+🧩 What Is the __pycache__ Folder?
+When you run a Python file (e.g. your FastAPI app), Python compiles it into bytecode — a lower-level, faster-to-load version of your .py file.
+These compiled files are stored inside a folder called __pycache__.
+
+# Folder Structured
+my_project/
+│
+├── main.py
+├── models.py
+├── __pycache__/
+│   ├── main.cpython-311.pyc
+│   └── models.cpython-311.pyc
+
+⚙️ Why Does Python Create It?
+✅ Purpose: Speed up startup time.
+When you run Python code again:
+    It checks if a matching .pyc file already exists.
+    If yes (and up-to-date), it loads the compiled bytecode instead of recompiling the .py file.
+That’s all — purely a performance optimization.
+
+❌ Is It Necessary?
+Not necessary for your source code.
+Safe to delete anytime.
+
+If you delete it:
+Python will automatically recreate it next time you run your app.
+It doesn’t affect your actual code or FastAPI functionality.
+

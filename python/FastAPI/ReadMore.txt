@@ -6,3 +6,9 @@ Step 4: uvicorn books:app --reload
 # FastAPI, where do we find already installed pip libraries
 "pip list"  --> Excuted this commond in terminal
  
+# installed pydantic Library
+pip install -U pydantic
+
+# -U (or --upgrade) → ensures you get the latest version
+# Verify the Installation
+pip show pydantic
