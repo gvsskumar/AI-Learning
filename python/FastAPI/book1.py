@@ -39,7 +39,7 @@ async def get_book_by_author(author: str):
             return book
     return {"message": "Book not found"}
 
-# Get Dynamic Title and Query parameter
+# Get Dyna  mic Title and Query parameter
 @app.get("/books/")
 async def get_book_by_title(title: str):
     for book in Books:
